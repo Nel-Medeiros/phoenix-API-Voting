@@ -1,5 +1,4 @@
 defmodule Voting.CreateAdminTest do
-
   use Voting.DataCase, async: true
 
   alias Voting.{Admin, CreateAdmin}
