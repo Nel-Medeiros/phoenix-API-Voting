@@ -6,7 +6,7 @@ defmodule Voting.Factory do
   # with Ecto
   use ExMachina.Ecto, repo: Voting.Repo
 
-  # we will use the factory system from lib ExMachina to make our sign in admin test
+  # we will use the factory pattern with lib ExMachina to make our sign in admin test
   def admin_factory do
     %Voting.Admin{
       name: "Jane Smith",
