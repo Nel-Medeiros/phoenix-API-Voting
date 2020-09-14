@@ -8,7 +8,7 @@ defmodule VotingWeb.Admin.SessionViewTest do
   test "render/2 returns ok and the admin data" do
     admin = params_for(:admin)
 
-    assert %{status: "ok", data: %{name: "Jane Smith"}} =
-             SessionView.render("session.json", %{admin: admin})
+    assert %{status: "ok", data: %{name: "Jane Smith", token: "emanuel"}} =
+             SessionView.render("session.json", %{admin: admin, token: "emanuel"})
   end
 end
